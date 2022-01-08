@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#This line uses regex to normalize the inputed MAC address (parses the input regardless of whether it uses colons, periods, or hypens):
+#This line uses regex to help normalize the MAC address values (parses the input regardless of whether it uses colons, periods, or hypens):
 OUI=$(echo ${1//[:.-]/} | tr "[a-f]" "[A-F]" | egrep -o "^[0-9A-F]{6}")
 
 #This line searches the ieee.org published oui.txt document for the OUI associated to the provided MAC address:
