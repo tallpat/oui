@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#This line uses regex to normalize the MAC inputs (parses the input regardless of whether it uses colons, periods, or hypens)
+OUI=$(echo ${1//[:.-]/} | tr "[a-f]" "[A-F]" | egrep -o "^[0-9A-F]{6}")
+
+#This line searches the published oui.txt document for the OUI from the input
+lynx -dump http://standards-oui.ieee.org/oui/oui.txt | grep $OUI
