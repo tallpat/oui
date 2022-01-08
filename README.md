@@ -1,12 +1,15 @@
 # oui
 CLI OUI Lookups
 
+Requirement:
+Lynx - text based web browser (sudo apt install lynx -y)
+
 Install:
-copy to /bin (cp oui /bin/oui)
-make executable (chmod +x /bin/oui)
+copy to /bin (sudo cp oui /bin/oui)
+make executable (sudo chmod +x /bin/oui)
 
 Run:
-To run the lookup, type "oui xx:xx:xx:xx:xx:xx" where the x's are the MAC address to lookup (must be >=6 digits)
+To run an OUI lookup, type "oui xx:xx:xx:xx:xx:xx" where the x's are the MAC address to lookup (must be >=6 digits)
 
 Sample:
 
