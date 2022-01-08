@@ -15,18 +15,18 @@ Install:
 
 copy to /bin 
 ```
-sudo cp oui /bin/oui
+$sudo cp oui /bin/oui
 ```
 
 make executable 
 ```
-sudo chmod +x /bin/oui
+$sudo chmod +x /bin/oui
 ```
 
 
 Run:
 
-To run an OUI lookup, type "oui xx:xx:xx:xx:xx:xx" where the x's are the MAC address to lookup (must be >=6 digits)
+To run an OUI lookup, type "oui xx:xx:xx:xx:xx:xx" where the x's are the MAC address to lookup (input must be >=6 digits)
 
 
 Sample:
